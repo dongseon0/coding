@@ -641,3 +641,31 @@ int main()
 
     return 0;
 }*/
+//랜덤 정수 맞히는 게임
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int guess;
+    int n = 0;
+    int answer = rand()%100 ;
+    
+    do
+    {
+        scanf("%d", &guess);
+        n++;
+        if(guess < answer)
+            printf("숫자가 낮습니다.");
+        else if (guess > answer)
+            printf("숫자가 높습니다.");
+        else
+            break;
+    } while(guess!=answer);
+    
+    printf("축하합니다! 시도횟수:%d", n);
+    
+    return 0;
+}*/
+
